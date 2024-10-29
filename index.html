@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font awesome cdn  -->
+    <script src="https://kit.fontawesome.com/310af2a5ce.js" crossorigin="anonymous"></script>
+
     <!-- google font cdn  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +31,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'color-primary': 'rgb(171, 239, 95)',
+                        'color-primary2': 'rgba(171, 239, 95, 0.5)',
                     }
                 }
             }
@@ -39,13 +44,76 @@
 <body class="manrope">
 
     <!-- header section  -->
-    <header>
-        <nav>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, maiores?</h2>
-        </nav>
+    <header class="md:container mx-auto">
+        <!-- navber start -->
+        <nav class="mb-2"> 
+            <div class="navbar bg-base-100">
 
+                <div class="flex flex-1 md:flex-none">
+                    <a class="font-bold text-2xl">
+                        <i class="fa-solid bg-color-primary rounded-full p-1 fa-arrow-right -rotate-45"></i> Rinterio
+                    </a>
+                </div>
+
+
+                <div class="hidden md:flex flex-1 justify-center">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="flex  justify-end space-x-2">
+
+                    <div class="dropdown md:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="hidden md:flex items-center space-x-2">
+                        <i class="fa-solid fa-cart-shopping bg-gray-50 p-2 rounded-full"></i>
+                        <i class="fa-solid fa-magnifying-glass bg-gray-50 p-2 rounded-full"></i>
+                        <a class="btn bg-color-primary rounded-3xl">Book Consult <i
+                                class="fa-solid fa-arrow-right bg-white rounded-full p-1 -rotate-45"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navber end -->
+
+        <!-- banner section start -->
+         <section class="mb-24 mt-10">
+           <div class=" text-center ">
+            <img class="mx-auto mb-6" src="./assets/banner.png" alt="">
+            <h2 class="font-extrabold text-4xl mb-5 md:text-6xl">A barn house of this design has a <br> striking appearance</h2>
+            <p class="font-medium text-base mb-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+            <a class="btn bg-color-primary2 rounded-3xl">View Details <i
+                class="fa-solid fa-arrow-right bg-color-primary rounded-full p-1 -rotate-45"></i></a>
+           </div>
+         </section>
+        <!-- banner section end -->
     </header>
     <!-- header section end -->
+
+    
 
     <!-- main section  -->
     <main>
