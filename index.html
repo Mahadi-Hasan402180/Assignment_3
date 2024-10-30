@@ -46,21 +46,20 @@
 </head>
 
 
-<body class="manrope">
+<body class="manrope overflow-x-hidden">
 
     <!-- header section  -->
     <header class="md:container mx-auto">
         <!-- navber start -->
         <nav class="mb-2 mt-2">
             <div class="navbar bg-base-100">
-
-                <div class="flex flex-1 md:flex-none">
+                <div class="flex flex-1 min-w-0 md:flex-none">
                     <a class="font-bold text-2xl">
                         <i class="fa-solid bg-color-primary rounded-full p-1 fa-arrow-right -rotate-45"></i> Rinterio
                     </a>
                 </div>
-
-
+        
+                <!-- Centered Menu for Desktop -->
                 <div class="hidden md:flex flex-1 justify-center">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
@@ -70,20 +69,20 @@
                         <li><a>Contact Us</a></li>
                     </ul>
                 </div>
-
-
-                <div class="flex  justify-end space-x-2">
-
+        
+                <!-- Right-side Controls -->
+                <div class="flex justify-end space-x-2">
+                    <!-- Dropdown for Mobile -->
                     <div class="dropdown md:hidden">
-                        <div tabindex="0" role="button" class="btn btn-ghost">
+                        <button tabindex="0" role="button" class="btn btn-ghost">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
-                        </div>
+                        </button>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow w-full max-w-xs">
                             <li><a>Home</a></li>
                             <li><a>Services</a></li>
                             <li><a>Portfolio</a></li>
@@ -91,8 +90,8 @@
                             <li><a>Contact Us</a></li>
                         </ul>
                     </div>
-
-
+        
+                    <!-- Icons and Buttons for Desktop -->
                     <div class="hidden md:flex items-center space-x-2">
                         <i class="fa-solid fa-cart-shopping bg-gray-50 p-2 rounded-full"></i>
                         <i class="fa-solid fa-magnifying-glass bg-gray-50 p-2 rounded-full"></i>
@@ -102,6 +101,7 @@
                 </div>
             </div>
         </nav>
+        
         <!-- navber end -->
 
         <!-- banner section start -->
